@@ -1,0 +1,30 @@
+ol{
+    border: 1px solid;
+    counter-reset: li;
+    width: 60vw;
+    margin: auto;
+    padding-left: 1em;
+    
+}
+li{
+    display: inline-block;
+    width: 12em;
+    margin-left: 2em;
+    vertical-align: top;
+    
+}
+li::before{
+    content:"" counter(li)"";
+    counter-increment: li;
+    font-family: orpheus;
+    font-weight: 700;
+    font-size: 8em;
+    margin-left: -0.3em;
+    font-weight: bold;
+    color: #eeeeff;
+        
+}
+p{
+    margin-top: -7.5em;
+    margin-right: 1em;
+}
